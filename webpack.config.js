@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/index.js',
+  entry: './src/ts/index.tsx',
   output: {
     path: path.resolve(__dirname, './dist/src/'),
     filename: 'bundle.js',
@@ -16,24 +16,22 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
         test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env', 'react'],
-            plugins: ['transform-class-properties', 'transform-object-rest-spread'],
-          },
-        },
+        loader: 'source-map-loader',
+      }, {
+        test: /\.tsx?$/,
+        loader: 'awesome-typescript-loader',
       }, {
         test: /\.css$/,
         loader: 'style-loader!css-loader',
       },
     ],
   },
+  devtool: 'source-map',
   resolve: {
     modules: ['node_modules'],
-    extensions: ['.webpack.js', '.web.js', '.js', '.json', 'jsx', 'css'],
+    extensions: ['.webpack.js', '.web.js', '.js', '.json', 'jsx', 'css', '.ts', '.tsx'],
   },
   node: {
     console: false,

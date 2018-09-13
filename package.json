@@ -7,7 +7,7 @@
     "test": "karma start --browsers FirefoxDeveloper",
     "build": "webpack --progress -p",
     "watch": "webpack --progress --watch",
-    "server": "webpack-dev-server --open",
+    "server": "webpack-dev-server --hot --open",
     "dist": "webpack --progress -p --optimize-minimize"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ParkSB/sticky#readme",
   "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
@@ -35,10 +36,6 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
-    "style-loader": "^0.20.3",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.4",
     "jasmine-core": "^3.1.0",
     "jasmine-expect": "^3.8.3",
     "karma": "^3.0.0",
@@ -46,9 +43,17 @@
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.2",
     "karma-jasmine-matchers": "^3.8.3",
-    "karma-webpack": "^3.0.0"
+    "karma-webpack": "^3.0.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.20.3",
+    "typescript": "^3.0.3",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
     "jquery": "^3.3.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"

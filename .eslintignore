@@ -1,6 +1,0 @@
-node_modules/
-dist/
-test/
-
-karma.conf.js
-webpack.conf.js

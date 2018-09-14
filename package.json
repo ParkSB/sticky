@@ -2,7 +2,7 @@
   "name": "sticky",
   "version": "0.0.1",
   "description": " I'm afraid to put stickers on my laptop.",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "test": "karma start --browsers FirefoxDeveloper",
     "build": "webpack --progress -p",
@@ -31,7 +31,6 @@
     "babel-preset-react": "^6.24.1",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^0.28.11",
-    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
@@ -46,15 +45,18 @@
     "karma-webpack": "^3.0.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.20.3",
+    "tslint-config-airbnb": "^5.11.0",
     "typescript": "^3.0.3",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.4"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^3.1.4",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
+    "tslint": "^5.11.0"
+  },
+  "dependencies": {
     "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
   }

@@ -1,0 +1,5 @@
+#sticker-list {
+  flex: 1;
+  max-width: 200px;
+  border-right: 1px #D0D0D0 solid;
+}

@@ -3,3 +3,21 @@
 * {
   font-family: 'Spoqa Han Sans', sans-serif;
 }
+
+html, body, #root {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+#container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}

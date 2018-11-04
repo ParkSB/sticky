@@ -1,0 +1,11 @@
+@import "_variables";
+
+#navigation-bar {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px $borderColor solid;
+  h1 {
+    font-size: 22px;
+    color: $textColor;
+  }
+}

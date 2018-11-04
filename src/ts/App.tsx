@@ -3,6 +3,6 @@ import reactDom from 'react-dom';
 import Container from './Container';
 
 import 'normalize.css';
-import '../css/index.css';
+import '../scss/index.scss';
 
 reactDom.render(<Container />, document.querySelector('#root'));

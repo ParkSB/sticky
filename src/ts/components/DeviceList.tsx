@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../css/device-list.css';
+import '../../scss/device-list.scss';
 
 class DeviceList extends React.Component {
   render = () => {

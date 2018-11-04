@@ -1,0 +1,12 @@
+@import "_variables";
+
+.sticker-item {
+  width: 100%;
+  height: 200px;
+  list-style: none;
+  border-bottom: 1px $borderColor solid;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

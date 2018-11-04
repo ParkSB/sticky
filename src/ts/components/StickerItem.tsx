@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../css/sticker-item.css';
+import '../../scss/sticker-item.scss';
 
 class StickerItem extends React.Component<{ sticker: any }> {
   constructor(props: any) {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../css/play-ground.css';
+import '../../scss/play-ground.scss';
 
 class PlayGround extends React.Component {
   render = () => {

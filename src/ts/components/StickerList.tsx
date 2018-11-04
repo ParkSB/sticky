@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../../css/sticker-list.css';
+import '../../scss/sticker-list.scss';
 import StickerItem from './StickerItem';
 
 class StickerList extends React.Component<{}, { stickers: object[] }> {
